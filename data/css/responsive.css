@@ -1,0 +1,203 @@
+@media (max-width: 575.98px) { /* Extra small devices */
+  .aep-navigation {
+    display: none;
+  }
+  header {
+    margin-left: 20px;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin-top: -100px;
+    margin-bottom: -5px;
+  }
+
+  header h4 {
+    margin-bottom: -20px;
+    font-size: 1.25rem;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-light i {
+    margin-top: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;;
+  }
+  .container {
+    width: 100%;
+  }
+  .information {
+    height: 30vh;
+  }
+  .about-title, .hidden {
+    font-size: 1.25rem;
+    display: block;
+    color: #e2e8f0;
+  }
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .experience-time {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .experience-info {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .aep-navigation {
+    display: none;
+  }
+  .information {
+    height: 30vh;
+  }
+  header {
+    margin-left: 20px;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin-top: -100px;
+    margin-bottom: -5px;
+  }
+
+  header h4 {
+    margin-bottom: -20px;
+    font-size: 1.25rem;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-light i {
+    margin-top: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;;
+  }
+  .container {
+    width: 100%;
+  }
+  .about-title, .hidden {
+    font-size: 1.25rem;
+    display: block;
+    color: #e2e8f0;
+  }
+  .experience-info {
+    text-align: justify;
+  }
+  .tech-stack span{
+    font-size: 0.75rem;
+  }
+  .experience-time {
+    width: 25%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices */
+  /* CSS cho tablet */
+  .aep-navigation {
+    display: none;
+  }
+  .information {
+    height: 30vh;
+  }
+  header {
+    height: 500px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    margin-top: -70px;
+    margin-bottom: -5px;
+  }
+  main {
+    margin-top: 0;
+  }
+  header h4 {
+    margin-bottom: -20px;
+    font-size: 1.25rem;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 750px;
+  }
+
+  .text-light i {
+    margin-top: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;;
+  }
+  .about-title, .hidden {
+    font-size: 1.25rem;
+    display: block;
+    color: #e2e8f0;
+  }
+  .tech-stack span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .experience-info {
+    text-align: justify;
+    width: 100%;
+  }
+  .tech-stack span{
+    font-size: 0.75rem;
+  }
+  .experience-time {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) { /* Extra large devices */
+  /* CSS cho desktop lớn */
+  .experience {
+    font-size: 1rem;
+    height: auto;
+    margin-top: 100px;
+    width: 100%;
+  }
+  .experience-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .experience-item {
+    display: flex;
+  }
+  .experience-time {
+    width: 25%;
+    font-size: 0.9rem;
+  }
+  .experience-info {
+    width: 75%;
+    text-align: justify;
+  }
+  .experience-info h6 {
+    font-size: 1rem;
+    color: aqua;
+  }
+  .tech-stack span{
+    font-size: 0.75rem;
+  }
+  
+}

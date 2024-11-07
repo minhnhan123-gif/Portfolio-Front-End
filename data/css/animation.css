@@ -1,0 +1,21 @@
+@keyframes hoverColor {
+  0% {
+    color: white; /* Màu ban đầu */
+  }
+  100% {
+    color: aqua; /* Màu khi hoàn thành animation */
+  }
+}
+
+
+@keyframes width {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 50px;
+  }
+  100% {
+    width: 20px;
+  }
+}

@@ -1,0 +1,277 @@
+* {
+  font-family: "Enriqueta", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #94a3b8;
+  
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+header {
+  width: 500px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #0a192f !important;
+}
+body::selection {
+  background-color: yellow;
+}
+section {
+  display: flex;
+}
+.cursor-light {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 250px 300px rgba(58, 135, 217, 0.1);
+  pointer-events: none;
+}
+.information {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-title, .hidden {
+  display: none;
+}
+
+header h4 {
+  color: #e2e8f0;
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+header h5 {
+  margin-top: 40px;
+}
+
+header h1 {
+  color: #e2e8f0;
+  width: auto;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 3rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #94a3b8;
+}
+
+.aep-navigation {
+  margin-top: 60px;
+  font-family: "Enriqueta", serif;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  height: 100px;
+}
+
+.aep-item {
+  display: flex;
+  width: 10rem;
+  position: relative;
+  padding-left: 40px;
+  transition: transform 0.5s ease, color 0.5s ease; /* Thêm transition cho biến đổi */
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  line-height: 1rem;
+  height: 50px;
+  align-items: center;
+}
+
+
+.aep-item.active::before {
+  width: 60px;
+  left: -30px;  /* Dịch chuyển vị trí bắt đầu của thanh */
+}
+
+.aep-item:hover, .aep-item.active {
+  color: #fff;
+  transform: translateX(20%);
+}
+
+.aep-item:not(.active)::before {
+  background-color: #707780;
+}
+
+.contact-list {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+}
+
+.text-light i {
+  margin-top: 100px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 10px;;
+}
+
+a i:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+main {
+  text-align: justify;
+  line-height: 1.625;
+  width: 100%;
+  height: 100vh;
+  padding-top: 8rem;
+  position: relative;
+}
+.scrollable {
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 15px;
+}
+
+.about p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about p a:hover {
+  color: aqua;
+}
+
+.frontend {
+  cursor: pointer;
+}
+/* 
+.frontend:hover span {
+  animation: hoverColor 0.3s forwards
+}
+
+.frontend span:nth-child(1) { animation-delay: 0.1s; }
+.frontend span:nth-child(2) { animation-delay: 0.2s; }
+.frontend span:nth-child(3) { animation-delay: 0.3s; }
+.frontend span:nth-child(4) { animation-delay: 0.4s; }
+.frontend span:nth-child(5) { animation-delay: 0.5s; }
+.frontend span:nth-child(6) { animation-delay: 0.6s; }
+.frontend span:nth-child(7) { animation-delay: 0.7s; }
+.frontend span:nth-child(8) { animation-delay: 0.8s; } */
+
+
+.project {
+  font-size: 1rem;
+  height: auto;
+  margin-top: 100px;
+  width: 100%;
+}
+.project-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-link {
+  display: flex;
+  color: inherit;
+  display: block;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+}
+.project-link:hover {
+  background-color: rgb(109, 191, 184, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: translateY(-5px);
+}
+.project-item {
+  position: relative;  
+  overflow: hidden;
+}
+.project-image__border {
+  border-radius: 8px; /* Tạo góc bo tròn cho viền */
+  overflow: hidden; /* Ẩn phần hình ảnh khi phóng to */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển động */
+}
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.project-image__border:hover .project-image {
+  transform: scale(1.1); /* Phóng to hình ảnh 10% */
+}
+
+.project-info {
+  text-align: justify;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.project-info p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+
+}
+.project-info h6 {
+  font-size: 1rem;
+  color: aqua;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 15px;
+}
+.tech-stack span {
+  background-color: rgb(109, 191, 184, 0.4);
+  border-radius: 20px;
+  color: rgb(0, 255, 234);
+  width: 100px;
+  text-align: center;
+}
+
+
+.experience {
+  font-size: 1rem;
+  height: auto;
+  margin-top: 100px;
+  width: 100%;
+}
+.experience-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.experience-item {
+  display: flex;
+}
+.experience-time {
+  flex: 1;
+  width: 25%;
+  font-size: 1rem;
+}
+.experience-info {
+  width: 75%;
+}
+.experience-info h6 {
+  font-size: 1rem;
+  color: aqua;
+}
+.experience-info p {
+  font-size: 1rem;
+}
