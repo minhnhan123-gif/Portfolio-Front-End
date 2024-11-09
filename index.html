@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet"></head>
   <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500&family=Mochiy+Pop+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <body> 
   <div class="cursor-light" id="cursor-light"></div>
   <section class="container" style="display: flex;">
@@ -34,16 +36,16 @@
       <div class="contact">
         <div class="row contact-list">
           <div class="col-auto">
-            <a  target="_blank"  href="https://github.com/minhnhan123-gif" class="text-light"><i class="fab fa-github fa-2x"></i></a>
+            <a rel="noopener noreferrer" target="_blank"  href="https://github.com/minhnhan123-gif" class="text-light"><i class="fab fa-github fa-2x"></i></a>
           </div>
           <div  class="col-auto">
-            <a target="_blank" href="https://www.linkedin.com/in/nh%C3%A2n-l%C3%AA-3bba4a2ab/" class="text-light"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/nh%C3%A2n-l%C3%AA-3bba4a2ab/" class="text-light"><i class="fab fa-linkedin fa-2x"></i></a>
           </div>
           <div class="col-auto">
-            <a  href="mailto:nhand7476@gmail.com" class="text-light"><i class="fas fa-envelope fa-2x"></i></a>
+            <a rel="noopener noreferrer"  href="mailto:nhand7476@gmail.com" class="text-light"><i class="fas fa-envelope fa-2x"></i></a>
           </div>
           <div class="col-auto">
-            <a  target="_blank"  href="https://www.facebook.com/profile.php?id=100051583754251" class="text-light"><i class="fab fa-facebook fa-2x"></i></a>
+            <a rel="noopener noreferrer" target="_blank"  href="https://www.facebook.com/profile.php?id=100051583754251" class="text-light"><i class="fab fa-facebook fa-2x"></i></a>
           </div>
         </div>
       </div>
@@ -72,70 +74,97 @@
         </p>
       </div>
       <div class="experience" id="experience">
-      <div class="about-title">Experience</div>
-        <ul class="experience-list">
-          <li class="experience-item">
-            <div class="experience-time">Dec 2023 - Apr 2024</div>
-            <div class="experience-info">
-              <h6>Building an Automated Queue Ticket System Integrated with QR Extraction from Citizen ID</h6>
-              <p>Developed an automated queue ticket system that allows users to scan Citizen ID QR codes for seamless ticket generation. Integrated with QR extraction, the system efficiently processes user data, assigns queue numbers, and provides real-time updates on ticket status</p>
-              <div class="tech-stack">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>React</span>
-                <span>Python</span>
-                <span>API</span>
-                <span>Django</span>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div class="about-title">Experience</div>
       </div>
       <div class="project" id="project">
         <div class="about-title">Project</div>
-        <ul class="project-list">
-          <li class="project-item">
-           <a target="_blank" href="https://minhnhan123-gif.github.io/music/?fbclid=IwAR0Y3ZN4jsHQ7aCrL5-hURM9TSmKQ1MfEbohWgED8eNl4xubn29so7L1-LU" class="project-link">
-            <div class="project-image__border">
-              <img src="./data/image/z5953715535851_7181c0a903abdbab06f2f3b146c52eba.jpg" alt="Build a music player" class="project-image">
-            </div>
-            <div class="project-info">
-              <h6>Build a music player</h6>
-              <div class="arrow-up"></div>
-              <p>A simple music player built with HTML, CSS, and GitHub Pages to host the project.</p>
-              <div class="tech-stack">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Github</span>
-                <span>JavaScript</span>
-              </div>
-            </div>
-           </a>
-          </li>
-          <li class="project-item">
-            <a target="_blank" href="https://minhnhan123-gif.github.io/portfolio-FE/" class="project-link">
-              <div class="project-image__border">
-                <img src="./data/image/z5965949122500_4b2ca52cf8c14d195defb876d72b7e3e.jpg" alt="Build a portfolio" class="project-image">
-              </div>
-              <div class="project-info">
-               <h6>Build a Portfolio</h6>
-               <div class="arrow-up"></div>
-               <p>A simple portfolio built with HTML, CSS, and GitHub Pages to host the project.</p>
-               <div class="tech-stack">
-                 <span>HTML</span>
-                 <span>CSS</span>
-                 <span>Github</span>
-                 <span>JavaScript</span>
-               </div>
-             </div>
-            </a>
-           </li>
-        </ul>
       </div>
     </main>
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="./data/script/scirpt.js"></script>
+  <script type="text/babel">
+    const experiences = [
+      {
+        time: "Dec 2023 - Apr 2024",
+        title: "Building an Automated Queue Ticket System Integrated with QR Extraction from Citizen ID",
+        description:
+          "Developed an automated queue ticket system that allows users to scan Citizen ID QR codes for seamless ticket generation. Integrated with QR extraction, the system efficiently processes user data, assigns queue numbers, and provides real-time updates on ticket status.",
+        techStack: ["HTML", "CSS", "React", "Python", "API", "Django"]
+      },
+    ];
+
+    const projects = [
+      {
+        title: "Build a music player",
+        link: "https://minhnhan123-gif.github.io/music/?fbclid=IwAR0Y3ZN4jsHQ7aCrL5-hURM9TSmKQ1MfEbohWgED8eNl4xubn29so7L1-LU",
+        imageSrc: "./data/image/z5953715535851_7181c0a903abdbab06f2f3b146c52eba.jpg",
+        altText: "Build a music player",
+        description: "A simple music player built with HTML, CSS, and GitHub Pages to host the project.",
+        techStack: ["HTML", "CSS", "Github", "JavaScript"]
+      },
+      {
+        title: "Build a Portfolio",
+        link: "https://minhnhan123-gif.github.io/portfolio-FE",
+        imageSrc: "./data/image/z5965949122500_4b2ca52cf8c14d195defb876d72b7e3e.jpg",
+        altText: "Build a portfolio",
+        description: "A simple portfolio built with HTML, CSS, and GitHub Pages to host the project.",
+        techStack: ["HTML", "CSS", "Github", "JavaScript"]
+      },
+    ];
+
+
+    function Experience() {
+      return(
+        <ul className="experience-list">
+            {experiences.map((experience, index) => (
+              <li key={index} className="experience-item">
+                <div className='experience-time'>{experience.time}</div>
+                <div className='experience-info'>
+                  <h6>{experience.title}</h6>
+                  <p>{experience.description}</p>
+                  <div className='tech-stack'>
+                    {experience.techStack.map((tech, i) => (
+                      <span key={i}>{tech}</span>
+                    ))}
+                  </div>
+                </div> 
+              </li>
+            ))}
+          </ul>
+      )
+    }
+
+    function Project() {
+      return (
+        <ul className="project-list">
+          {projects.map((project, index) => (
+            <li key={index} className='project-item'>
+              <a target='_blank' className='project-link' rel='noopener noreferrer' href={project.link}>
+                <div className='project-image_border'>
+                  <img src={project.imageSrc} className='project-image' alt={project.altText}/>
+                </div>  
+                <div className='project-info'>
+                  <h6>{project.title}</h6>
+                  <div className='arrow-up'></div>
+                  <p>{project.description}</p>
+                  <div className='tech-stack'>
+                    {project.techStack.map((tech, i) => (
+                      <span key={i}>{tech}</span>
+                    ))}  
+                  </div>  
+                </div>
+              </a>
+            </li>
+          ))}  
+        </ul>
+      )
+    }
+  
+  ReactDOM.createRoot(document.getElementById('experience')).render(<Experience/>)
+  ReactDOM.createRoot(document.getElementById('project')).render(<Project/>)
+
+  </script>
 </body>
 </html>
