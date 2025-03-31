@@ -21,6 +21,9 @@ function rgbColor() {
   return `rgb(${r}, ${g}, ${b})`;
 }
 function updateLightMouse() {
+  // light.style.left = mouseX + window.scrollX + 'px'
+  // light.style.top = mouseY + window.scrollY + 'px'
+
   light.style.left = mouseX + window.scrollX + 'px'
   light.style.top = mouseY + window.scrollY + 'px'
 }
